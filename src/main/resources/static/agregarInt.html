@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/agregarInt.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./img/logo2.png" alt="">
+        </div>
+    </header>
+    <main>
+        <section class="formu">
+            <form action="#">
+                <h3>Agregar Interno</h3>
+                <div class="form-container">
+                    <div class="form-container-colum1">
+                        <label for="circunscripcion">Circunscripcion</label>
+                        <select name="circunscripcion" id="circunscripcion">
+                            <option value="" disabled selected>Circunscripcion</option>
+                            <option value="1- Capital">1- Capital</option>
+                            <option value="2- Tinogasta">2- Tinogasta</option>
+                            <option value="3- Belen">3- Belen</option>
+                            <option value="4- Andalgala">4- Andalgala</option>
+                            <option value="5- Santa Maria">5- Santa Maria</option>
+                            <option value="6- Recreo">6- Recreo</option>
+                        </select>
+
+                        <label for="fiscalia">Fiscalia</label>
+                        <select name="fiscalia" id="fiscalia">
+                            <option value="" disabled selected>Fiscalia</option>
+                            <option value="Penal 1">Penal 1</option>
+                            <option value="Penal 2">Penal 2</option>
+                            <option value="Penal 3">Penal 3</option>
+                            <option value="Penal 4">Penal 4</option>
+                            <option value="Penal 5">Penal 5</option>
+                            <option value="Penal 6">Penal 6</option>
+                        </select>
+
+                        <textarea name="text" id="exp" cols="30" rows="11" placeholder="Expediente"></textarea>
+        
+                        <textarea name="text" id="obs" cols="30" rows="11" placeholder="Observaciones"></textarea>
+
+                    </div>
+        
+                    <div class="form-container-colum2">
+                        
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre">
+
+                        <label for="fechaD">Fecha Detendio</label>
+                        <input type="date" name="fechaD" id="fechaD">
+
+                        <label for="fechaL">Fecha Limite</label>
+                        <input type="date" name="fechaL" id="fechaL">
+
+                        <label for="fechaP">Fecha de Prision Preventiva</label>
+                        <input type="date" name="fechaP" id="fechaP">
+
+                        
+                    </div>
+                </div>
+
+                <button type="button" onclick="agregarInternos()">Añadir</button>
+            </form>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./js/listado.js"></script>
+</body>
+</html>
